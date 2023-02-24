@@ -1,0 +1,42 @@
+#skillset {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+#skillset .skill-list .skill-item {
+	background-color: #7333f9;
+	color: #fefefe;
+	border-radius: 5px;
+	display: inline-block;
+	transition: 0.1s color ease-in, 0.2s background-color ease-in;
+	font-size: 1.1em;
+	padding: 0.7em 1em;
+	margin-bottom: 0.8em;
+	margin-right: 0.8em;
+}
+@media (max-width: 700px) {
+	#skillset .skill-list .skill-item {
+		margin-bottom: 0.5em;
+		margin-right: 0.5em;
+	}
+}
+#skillset .subskill-list .subskill-item {
+	background-color: #7333f9;
+	color: #fefefe;
+	border-radius: 5px;
+	display: inline-block;
+	transition: 0.1s color ease-in, 0.2s background-color ease-in;
+	padding: 0.3em 0.7em;
+	margin-bottom: 0.6em;
+	margin-right: 0.6em;
+}
+@media (max-width: 700px) {
+	#skillset .subskill-list .subskill-item {
+		margin-bottom: 0.5em;
+		margin-right: 0.5em;
+	}
+}
+
