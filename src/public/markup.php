@@ -37,7 +37,7 @@ include 'markup.html.php';
 $content = ob_get_clean();
 
 if (!empty($generate)) {
-	$public_directory = __DIR__ . '/../../public/';
+	$public_directory = __DIR__ . '/../../';
 
 	file_put_contents($public_directory.'assets/stylesheet.css', $stylesheet);
 	file_put_contents($public_directory.'assets/script.js', $script);
