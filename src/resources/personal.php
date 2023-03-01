@@ -15,12 +15,7 @@ $personal = [
 			"name" => "GitHub", 
 			"username" => "@noorwachid", 
 			"url" => "https://github.com/noorwachid" 
-		], 
-		[
-			"name" => "Twitter", 
-			"username" => "@noorwach", 
-			"url" => "https://twitter.com/noorwach" 
-		] 
+		]
 	] 
 ]; 
 
