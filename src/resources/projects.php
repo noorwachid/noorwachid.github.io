@@ -2,6 +2,25 @@
 
 $projects = [
 	[
+		"name" => "Dinominator", 
+		"description" => "Google Chrome offline dino game clone", 
+		"thumbnail" => "dinominator.png", 
+		"stack" => [
+			"JavaScript" 
+		], 
+		"links" => [
+			[
+				"type" => "source", 
+				"url" => "https://github.com/noorwachid/dinominator" 
+			], 
+			[
+				"type" => "demo", 
+				"url" => "http://noorwach.id/dinominator", 
+				"primary" => true 
+			] 
+		] 
+	], 
+	[
 		"name" => "RainType", 
 		"description" => "Typing test program", 
 		"thumbnail" => "raintype.png", 
@@ -108,5 +127,15 @@ $projects = [
 		] 
 	] 
 ]; 
+
+$projects = array_map(function ($project) {
+	$link = array_filter($project['links'], function ($link) { 
+		return $link['primary'] ?? false;
+	});
+
+	$project['primary_link'] = count($link) > 0 ? array_values($link)[0]['url'] : '#';
+
+	return $project;
+}, $projects);
 
 include 'projects.html.php';

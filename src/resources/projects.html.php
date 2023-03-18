@@ -3,7 +3,7 @@
 	<div class="project-list">
 
 	<?php foreach ($projects as $project) { ?>
-		<div class="project-item" onclick="location = ''" style="background-image: url('/assets/images/projects/<?php echo $project['thumbnail'] ?>');">
+		<div class="project-item" onclick="location = '<?php echo $project['primary_link'] ?>'" style="background-image: url('/assets/images/projects/<?php echo $project['thumbnail'] ?>');">
 			<div class="content">
 				<div class="links">
 					<?php foreach ($project['links'] as $link) { ?>
