@@ -2,6 +2,26 @@
 
 $projects = [
 	[
+		"name" => "Gularen", 
+		"description" => "A sweet-spot of markup language", 
+		"thumbnail" => "gularen.png", 
+		"stack" => [
+			"C++",
+			"JavaScript" 
+		], 
+		"links" => [
+			[
+				"type" => "source", 
+				"url" => "https://github.com/noorwachid/gularen/" 
+			], 
+			[
+				"type" => "demo", 
+				"url" => "http://noorwach.id/gularen/editor/", 
+				"primary" => true 
+			] 
+		] 
+	], 
+	[
 		"name" => "Dinominator", 
 		"description" => "Google Chrome offline dino game clone", 
 		"thumbnail" => "dinominator.png", 
