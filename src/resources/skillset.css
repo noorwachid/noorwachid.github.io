@@ -6,8 +6,12 @@
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
+#skillset .skill-list {
+	display: flex;
+	flex-direction: column;
+}
 #skillset .skill-list .skill-item {
-	background-color: #7333f9;
+	background-color: #333;
 	color: #fefefe;
 	border-radius: 5px;
 	display: inline-block;
@@ -24,7 +28,7 @@
 	}
 }
 #skillset .subskill-list .subskill-item {
-	background-color: #7333f9;
+	background-color: #333;
 	color: #fefefe;
 	border-radius: 5px;
 	display: inline-block;

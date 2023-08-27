@@ -1,5 +1,5 @@
 <div id="home"></div>
-<div id="banner" style="background-image: url('/assets/images/banner.png');">
+<div id="banner">
 	<div class="banner-container">
 		<h1 class="name"><?php echo $personal['name'] ?></h1>
 		<p class="specialist"><?php echo $personal['specialist'] ?></p>

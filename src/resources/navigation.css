@@ -1,9 +1,7 @@
 #navigation {
 	background-color: #131313;
 	border-bottom: 1px solid #222;
-	position: fixed;
 	width: 100%;
-	z-index: 9999;
 	top: 0;
 	transition: 0.1s top ease-in;
 }

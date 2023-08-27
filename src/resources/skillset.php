@@ -9,13 +9,6 @@ $skills = [
 		] 
 	], 
 	[
-		"name" => "React JS", 
-		"color" => [
-			"background" => "#323330", 
-			"foreground" => "#61DBFB" 
-		] 
-	], 
-	[
 		"name" => "PHP", 
 		"color" => [
 			"background" => "#787CB5", 
@@ -30,17 +23,17 @@ $skills = [
 		] 
 	], 
 	[
-		"name" => "PostgreSQL", 
-		"color" => [
-			"background" => "#31648c", 
-			"foreground" => "#f7f7f7" 
-		] 
-	], 
-	[
 		"name" => "C++", 
 		"color" => [
 			"background" => "#6096cb", 
 			"foreground" => "#f7f7f7" 
+		] 
+	], 
+	[
+		"name" => "Python", 
+		"color" => [
+			"background" => "#3096eb", 
+			"foreground" => "#ffc733" 
 		] 
 	] 
 ]; 
