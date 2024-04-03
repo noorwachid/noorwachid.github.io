@@ -14,7 +14,7 @@ function attach($resource_name) {
 	}
 
 	if (!file_exists($resource.'.php')) {
-		return throw new Exception('Resource '.$resource.' is not found!');
+		throw new Exception('Resource '.$resource.' is not found!');
 	}
 
 	ob_start();

@@ -16,7 +16,7 @@ $projects = [
 			], 
 			[
 				"type" => "demo", 
-				"url" => "http://noorwach.id/gularen/editor/", 
+				"url" => "http://noorwach.id/gularen-editor/", 
 				"primary" => true 
 			] 
 		] 
