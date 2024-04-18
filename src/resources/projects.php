@@ -3,7 +3,7 @@
 $projects = [
 	[
 		"name" => "Gularen", 
-		"description" => "A sweet-spot of markup language", 
+		"description" => "A sweet-spot in markup languages", 
 		"thumbnail" => "gularen.png", 
 		"stack" => [
 			"C++",
