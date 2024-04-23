@@ -160,6 +160,18 @@ $experiences = [
     ]
 ];
 
+$project_chunks = [
+	[],
+	[],
+];
+
+foreach ($projects as $index => $project) {
+	if ($index % 2 == 0) {
+		$project_chunks[0][] = $project;
+	} else {
+		$project_chunks[1][] = $project;
+	}
+}
 
 ?>
 <!DOCTYPE html>
@@ -180,9 +192,11 @@ $experiences = [
 
 		<section id="projects">
 			<h2>Projects</h2>
-			<ul>
-				<?php foreach ($projects as $project): ?>
-					<li>
+			<div class="columns">
+				<?php foreach ($project_chunks as $index => $project_chunk): ?>
+				<div class="column column-<?= $index ?>">
+					<?php foreach ($project_chunk as $project): ?>
+					<div class="project">
 						<h3><?= $project['name'] ?></h3>
 						<p class="description"><?= $project['description'] ?></p>
 						<p class="stack"><?= implode(', ', $project['stack']) ?></p>
@@ -191,9 +205,11 @@ $experiences = [
 								<a href="<?= $link['url'] ?>"><?= $link['type'] ?></a>
 							<?php endforeach ?>
 						</p>
-					</li>
+					</div>
+					<?php endforeach ?>
+				</div>
 				<?php endforeach ?>
-			</ul>
+			</div>
 		</section>
 
 		<section id="experiences">

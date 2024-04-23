@@ -22,6 +22,11 @@ a:hover {
 	text-decoration: none;
 }
 
+section {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
 #banner {
 	padding: 3em 1em 2em 1em;
 }
@@ -33,6 +38,7 @@ a:hover {
 }
 
 #projects {
+	max-width: 50em;
 	padding: 1em 1.2em;
 }
 #projects h2 {
@@ -41,11 +47,18 @@ a:hover {
 #projects h3 {
 	font-size: 1em;
 }
-#projects ul {
-	list-style: none;
-}
-#projects li {
+#projects .project {
 	margin-bottom: 1.2em;
+}
+#projects .columns {
+	display: flex;
+	flex-direction: row;
+}
+#projects .column {
+	flex-basis: 50%;
+}
+#projects .column.column-1 {
+	padding-left: 1.2em;
 }
 #projects .description {
 	color: #ddd;
@@ -55,7 +68,14 @@ a:hover {
 	color: #999;
 	font-size: 0.9em;
 }
-
+@media (max-width: 380px) {
+	#projects .columns {
+		flex-direction: column;
+	}
+	#projects .column.column-1 {
+		padding-left: 0;
+	}
+}
 
 #experiences {
 	padding: 1em 1.2em;
@@ -82,7 +102,7 @@ a:hover {
 
 #contacts {
 	padding: 1em 1.2em;
-	margin-bottom: 1.2em;
+	margin-bottom: 3em;
 }
 #contacts h2 {
 	margin-bottom: 0.8em;
