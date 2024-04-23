@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #121212;
+	color: #fafafa;
+
+	font-family: monospace;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+a {
+	color: #8377ff;
+	text-decoration: none;
+}
+a:hover {
+	color: #c3afff;
+	text-decoration: none;
+}
+
+#banner {
+	padding: 3em 1em 2em 1em;
+}
+#banner h1 {
+	font-size: 2em;
+}
+#banner p {
+	color: #ddd;
+}
+
+#projects {
+	padding: 1em 1.2em;
+}
+#projects h2 {
+	margin-bottom: 0.8em;
+}
+#projects h3 {
+	font-size: 1em;
+}
+#projects ul {
+	list-style: none;
+}
+#projects li {
+	margin-bottom: 1.2em;
+}
+#projects .description {
+	color: #ddd;
+}
+#projects .stack {
+	margin-bottom: 0.5em;
+	color: #999;
+	font-size: 0.9em;
+}
+
+
+#experiences {
+	padding: 1em 1.2em;
+}
+#experiences h2 {
+	margin-bottom: 0.8em;
+}
+#experiences h3 {
+	font-size: 1em;
+}
+#experiences ul {
+	list-style: none;
+}
+#experiences li {
+	margin-bottom: 1em;
+}
+#experiences .position {
+	color: #ddd;
+}
+#experiences .year {
+	margin-bottom: 0.5em;
+	color: #999;
+}
+
+#contacts {
+	padding: 1em 1.2em;
+	margin-bottom: 1.2em;
+}
+#contacts h2 {
+	margin-bottom: 0.8em;
+}
+#contacts ul {
+	list-style: none;
+}
