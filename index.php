@@ -182,6 +182,7 @@ foreach ($projects as $index => $project) {
 		<meta name="theme-color" content="#7333f9">
 		<meta name="description" content="<?= $name ?>: <?= $specialist ?>">
 		<title>Noor Wachid</title>
+		<link rel="icon" href="/assets/favicon.png">
 		<link href="/index.css" rel="stylesheet">
 	</head>
 	<body>
