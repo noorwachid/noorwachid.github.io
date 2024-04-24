@@ -54,7 +54,8 @@ section {
 	display: flex;
 	flex-direction: row;
 }
-#projects .column {
+#projects ul {
+	list-style: none;
 	flex-basis: 50%;
 }
 #projects .column.column-1 {

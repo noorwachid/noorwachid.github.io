@@ -201,20 +201,20 @@ ob_start();
 			<h2>Projects</h2>
 			<div class="columns">
 				<?php foreach ($project_chunks as $index => $project_chunk): ?>
-				<div class="column column-<?= $index ?>">
+				<ul class="column-<?= $index ?>">
 					<?php foreach ($project_chunk as $project): ?>
-					<div class="project">
+					<li class="project">
 						<h3><?= $project['name'] ?></h3>
 						<p class="description"><?= $project['description'] ?></p>
 						<p class="stack"><?= implode(', ', $project['stack']) ?></p>
 						<p class="links">
-							<?php foreach ($project['links'] as $link): ?>
-								<a href="<?= $link['url'] ?>"><?= $link['type'] ?></a>
-							<?php endforeach ?>
+						<?php foreach ($project['links'] as $link): ?>
+							<a href="<?= $link['url'] ?>"><?= $link['type'] ?></a>
+						<?php endforeach ?>
 						</p>
-					</div>
+					</li>
 					<?php endforeach ?>
-				</div>
+				</ul>
 				<?php endforeach ?>
 			</div>
 		</section>
@@ -223,12 +223,12 @@ ob_start();
 			<h2>Experiences</h2>
 			<ul>
 				<?php foreach ($experiences as $experience): ?>
-					<li>
-						<h3><?= $experience['company'] ?></h3>
-						<p class="position"><?= $experience['position'] ?></p>
-						<p class="year"><?= $experience['year'] ?></p>
-						<p class="url"><a href="<?= $experience['url'] ?>"><?= $experience['url'] ?></a></p>
-					</li>
+				<li>
+					<h3><?= $experience['company'] ?></h3>
+					<p class="position"><?= $experience['position'] ?></p>
+					<p class="year"><?= $experience['year'] ?></p>
+					<p class="url"><a href="<?= $experience['url'] ?>"><?= $experience['url'] ?></a></p>
+				</li>
 				<?php endforeach ?>
 			</ul>
 		</section>
@@ -237,10 +237,10 @@ ob_start();
 			<h2>Contacts</h2>
 			<ul>
 				<?php foreach ($contacts as $key => $contact): ?>
-					<li>
-						<?= $key ?>: 
-						<a href="<?= $contact['url'] ?>"><?= $contact['label'] ?></a>
-					</li>
+				<li>
+					<?= $key ?>: 
+					<a href="<?= $contact['url'] ?>"><?= $contact['label'] ?></a>
+				</li>
 				<?php endforeach ?>
 			</ul>
 		</section>
