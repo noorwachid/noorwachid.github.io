@@ -166,12 +166,18 @@ $project_chunks = [
 ];
 
 foreach ($projects as $index => $project) {
+	$project['links'][] = [
+		'type' => 'screenshot',
+		'url'  => 'assets/images/projects/'.$project['thumbnail'],
+	];
 	if ($index % 2 == 0) {
 		$project_chunks[0][] = $project;
 	} else {
 		$project_chunks[1][] = $project;
 	}
 }
+
+ob_start();
 
 ?>
 <!DOCTYPE html>
@@ -240,3 +246,12 @@ foreach ($projects as $index => $project) {
 		</section>
 	</body>
 </html>
+<?php
+
+$content = ob_get_clean();
+
+file_put_contents('index.html', $content);
+
+echo $content;
+
+
