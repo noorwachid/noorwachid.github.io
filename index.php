@@ -82,7 +82,7 @@ $projects = [
 	], 
 	[
 		"name"        => "Sprint", 
-		"description" => "Speed reader: Read article or anything faster than ever", 
+		"description" => "Speed reader, read article or anything faster than ever", 
 		"thumbnail"   => "sprint.png", 
 		"stack"       => [
 			"JavaScript" 
@@ -134,7 +134,7 @@ $projects = [
 	], 
 	[
 		"name"        => "Anggur", 
-		"description" => "Graphics rendering library", 
+		"description" => "Multimedia library", 
 		"thumbnail"   => "anggur.png", 
 		"stack"       => [
 			"C++", 
