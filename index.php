@@ -15,10 +15,10 @@ $contacts = [
 		'url'   => 'https://linkedin.com/in/noorwachid',
 		'label' => '/in/noorwachid',
 	],
-	'Email' => [
-		'url'   => 'mailto:noorwach@yahoo.com',
-		'label' => 'noorwach@yahoo.com',
-	]
+	// 'Email' => [
+	// 	'url'   => 'mailto:noorwach@yahoo.com',
+	// 	'label' => 'noorwach@yahoo.com',
+	// ]
 ];
 
 $projects = [
